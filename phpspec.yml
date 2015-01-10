@@ -1,5 +1,5 @@
 suites:
     main:
-        namespace: App
-        psr4_prefix: App
+        namespace: Idun
+        psr4_prefix: Idun
         src_path: app

@@ -1,4 +1,4 @@
-<?php namespace App\Infrastructure;
+<?php namespace Idun\Infrastructure;
 
 use Exception;
 use Illuminate\Http\Response;

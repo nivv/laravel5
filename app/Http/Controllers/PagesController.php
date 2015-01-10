@@ -1,9 +1,9 @@
-<?php namespace App\Http\Controllers;
+<?php namespace Idun\Http\Controllers;
 
 
-use App\Http\Controllers\Controller;
-use App\Http\Requests\CreatePageRequest;
-use App\Page;
+use Idun\Http\Controllers\Controller;
+use Idun\Http\Requests\CreatePageRequest;
+use Idun\Page;
 class PagesController extends Controller {
 
 	/**

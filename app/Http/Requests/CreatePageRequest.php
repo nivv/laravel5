@@ -1,6 +1,6 @@
-<?php namespace App\Http\Requests;
+<?php namespace Idun\Http\Requests;
 
-use App\Http\Requests\Request;
+use Idun\Http\Requests\Request;
 
 class CreatePageRequest extends Request {
 

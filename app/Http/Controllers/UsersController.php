@@ -1,8 +1,8 @@
-<?php namespace App\Http\Controllers;
+<?php namespace Idun\Http\Controllers;
 
-use App\Http\Controllers\Controller;
-use App\Http\Requests\UpdateUserRequest;
-use App\User;
+use Idun\Http\Controllers\Controller;
+use Idun\Http\Requests\UpdateUserRequest;
+use Idun\User;
 
 
 class UsersController extends Controller {

@@ -1,7 +1,7 @@
-<?php namespace App\Http\Controllers;
+<?php namespace Idun\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\User;
+use Idun\User;
 
 class HomeController extends Controller {
 
