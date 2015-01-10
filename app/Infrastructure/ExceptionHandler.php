@@ -48,7 +48,15 @@ class ExceptionHandler implements ExceptionHandlerContract {
     public function render($request, Exception $e) {
 
         $whoops = new \Whoops\Run;
-        $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler());
+
+        if ($request->ajax())
+        {
+            $whoops->pushHandler(new \Whoops\Handler\JsonResponseHandler());
+        }
+        else
+        {
+            $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler());
+        }
 
         return new Response($whoops->handleException($e), $e->getStatusCode(), $e->getHeaders());
 

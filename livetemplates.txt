@@ -1,0 +1,11 @@
+
+<!-- $VALUE$ Form Input -->
+<div class="form-group">
+    {!! Form::label('$NAME$','$VALUE$:') !!}
+    {!! Form::text('$NAME$', null, array('class' => 'form-control', 'placeholder' => '$VALUE$')) !!}
+</div>
+<!-- $VALUE$ Form Input -->
+<div class="form-group">
+    {!! Form::label('$NAME$','$VALUE$:') !!}
+    {!! Form::password('$NAME$', array('class' => 'form-control', 'placeholder' => '$VALUE$')) !!}
+</div>

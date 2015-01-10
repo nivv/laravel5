@@ -16,32 +16,24 @@
 
                 </div>
             @endif
-            {!! Form::open(['route' => 'pages.store']) !!}
-                <!-- Title Form Input -->
-                <div class="form-group">
-                    {!! Form::label('title','Title:') !!}
-                    {!! Form::text('title', null, array('class' => 'form-control', 'placeholder' => 'Title')) !!}
-                </div>
-                <!-- Password Form Input -->
-                <div class="form-group">
-                    {!! Form::label('password','Password:') !!}
-                    {!! Form::password('password', array('class' => 'form-control', 'placeholder' => 'Password')) !!}
-                </div>
-                
-                <!-- Confirm Password Form Input -->
-                <div class="form-group">
-                    {!! Form::label('password_confirm','Confirm Password:') !!}
-                    {!! Form::password('password_confirm', array('class' => 'form-control', 'placeholder' => 'Confirm Password')) !!}
-                </div>
-                    
-                <div class="form-group">
-                    {!! Form::label('body','Body') !!}
-                    {!! Form::textarea('body', '', array('class' => 'form-control')) !!}
-                </div>
-                <div class="form-group">
-                    {!! Form::submit('Create', array('class' => 'btn btn-success')) !!}
-                </div>
-                <h4>To remember</h4>
+            {!! Form::open(['route' => 'pages.store', 'id' => 'foo']) !!}
+            <!-- Title Form Input -->
+            <div class="form-group control-group" data-form-field="title">
+                {!! Form::label('title','Title:') !!}
+                {!! Form::text('title', null, array('class' => 'form-control', 'placeholder' => 'Title')) !!}
+            </div>
+
+            <div class="form-group control-group" data-form-field="body">
+                {!! Form::label('body','Body') !!}
+                {!! Form::textarea('body', '', array('class' => 'form-control')) !!}
+            </div>
+            <div class="form-group">
+                {!! Form::submit('Create', array('class' => 'btn btn-success')) !!}
+            </div>
+            <div class="alert alert-danger error-container" style="display: none">
+                <ul class="error-list"></ul>
+            </div>
+            <h4>To remember</h4>
                 <pre>
                      &lt;!-- $VALUE$ Form Input --&gt;
 &lt;div class=&quot;form-group&quot;&gt;
@@ -59,5 +51,40 @@
             {!! Form::close() !!}
         </div>
     </div>
+@stop
 
+@section('scripts')
+    <script>
+        var request = window.superagent;
+    </script>
+    <script>
+        $("form").submit(function (e) {
+
+            var form = $('form');
+            var url = $('form').attr('action');
+            request
+                    .post(url)
+                    .send(form.serialize())
+                    .end(function (error, res) {
+                        if (res.status == 422) {
+                            var data = JSON.parse(res.text);
+                            $('.error-list').empty();
+                            $('.has-error').removeClass('has-error');
+
+                            for (var item in data) {
+                                console.log('adding error to: '+item)
+                                $("[data-form-field='" + item + "']").addClass('has-error')
+                                //console.log("Key: " + item + " / Value: " + data[item]);
+                                $('.error-list').append('<li>' + data[item] + '</li>')
+                            }
+                            $('.error-container').slideDown();
+                        } else if (res.status == 200) {
+                            $('.error-container').slideUp();
+                            alert('page saved');
+                        }
+                    });
+            return false;
+        });
+
+    </script>
 @stop

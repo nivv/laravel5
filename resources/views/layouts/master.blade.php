@@ -77,8 +77,8 @@
 
 <!-- jQuery 2.0.2 -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/superagent/0.15.7/superagent.js"></script>
+@yield('scripts')
 </body>
 </html>
 
