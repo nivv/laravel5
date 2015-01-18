@@ -25,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FeatureContext.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/features/bootstrap/FeatureContext.php">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.04972973" vertical-offset="0" max-vertical-offset="925">
-              <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.07666667" vertical-offset="0" max-vertical-offset="900">
+              <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -67,7 +67,6 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" />
         <option value="$PROJECT_DIR$/app/Page.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/index.blade.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/resources/views/layouts/master.blade.php" />
         <option value="$PROJECT_DIR$/app/Infrastructure/ExceptionHandler.php" />
         <option value="$PROJECT_DIR$/bootstrap/app.php" />
@@ -79,8 +78,9 @@
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/.env.behat" />
         <option value="$PROJECT_DIR$/behat.yml" />
-        <option value="$PROJECT_DIR$/features/example.feature" />
         <option value="$PROJECT_DIR$/features/bootstrap/FeatureContext.php" />
+        <option value="$PROJECT_DIR$/features/example.feature" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -531,13 +531,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.024134312" vertical-offset="0" max-vertical-offset="953">
-          <caret line="1" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1411043" vertical-offset="0" max-vertical-offset="978">
@@ -697,21 +690,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/example.feature">
+    <entry file="file://$PROJECT_DIR$/features/bootstrap/FeatureContext.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14918919" vertical-offset="0" max-vertical-offset="925">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.37297297" vertical-offset="0" max-vertical-offset="925">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
           <folding>
-            <marker date="1421569658000" expanded="true" signature="-1:-1" placeholder="Scenario: Home page" />
-            <marker date="1421569658000" expanded="true" signature="-1:-1" placeholder="Scenario: Dashboard is locked to guests" />
+            <marker date="1421570038000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1421570038000" expanded="true" signature="-1:-1" placeholder=" Defines application features from the specific context. ..." />
+            <marker date="1421570038000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421570038000" expanded="true" signature="-1:-1" placeholder=" Initializes context. ..." />
+            <marker date="1421570038000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1421570038000" expanded="true" signature="-1:-1" placeholder=" @Then I can do something with Laravel ..." />
+            <marker date="1421570038000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/bootstrap/FeatureContext.php">
+    <entry file="file://$PROJECT_DIR$/features/example.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.04972973" vertical-offset="0" max-vertical-offset="925">
-          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.024864865" vertical-offset="0" max-vertical-offset="925">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+          <folding>
+            <marker date="1421570193000" expanded="true" signature="-1:-1" placeholder="Scenario: Home page" />
+            <marker date="1421570193000" expanded="true" signature="-1:-1" placeholder="Scenario: Dashboard is locked to guests" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07666667" vertical-offset="0" max-vertical-offset="900">
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
           <folding />
         </state>
       </provider>
